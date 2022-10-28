@@ -1,0 +1,110 @@
+.login_form{
+    Width:458px;
+    margin: 65px auto;
+    background: #FFFFFF;
+    border: 1px solid #F7F7F7;
+    box-shadow: 24px 36px 64px -14px rgba(77, 77, 77, 0.15);
+    border-radius: 20px;
+}
+
+.login_form .form_body{
+    padding: 64px 64px;
+}
+
+.login_form .form_header{
+    text-align: center;
+    margin-bottom: 46px;
+    position: relative;
+}
+
+.login_form .form_header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.form_header span{
+    display: block;
+    color: #808080;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.form_header p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.form_header .back_btn{
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.form_header .back_btn::before {
+    content: "<";
+    margin-right: 6px;
+    color: #808080;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: .5px 2px .5px 2px;
+}
+
+.btn_group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.btn_group div{
+    display: flex;
+    align-items: center;
+}
+
+.btn_group .check_box{
+    width: 14.5px;
+    height: 14.5px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.btn_group span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login_form .form_footer{
+    font-size: 12px;
+    color:#808080;
+    text-align: center;
+    padding: 12px 0 32px 0;
+    border-top: 1px solid #E6E6E6;
+}
+
+.login_form .form_footer a{
+    color: #000;
+}
+
+@media(max-width:480px){
+    .login_form{
+        width: 90%;
+    }
+
+    .login_form .form_body{
+        padding: 32px 32px;
+    }
+
+    .btn_group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_group div{
+        margin-bottom: 15px;
+    }
+}
