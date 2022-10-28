@@ -1,8 +1,9 @@
 import React from 'react';
+
 import Button from '../common/Button';
 import InputField from '../common/InputField';
-
 import './LoginForm.css';
+import ProfileImage from "../../assets/profile.png"
 
 const LoginForm = () => {
     const formSubmit = (e) => {
@@ -13,10 +14,13 @@ const LoginForm = () => {
         <form className='login_form' onSubmit={formSubmit}>
             <main className='form_body'>
                 <header className='form_header'>
-                    <img src='http://projects.websetters.in/digg-seos/digg/wp-content/themes/twentytwenty-child-theme/img/demo-prof.jpg' alt='profile' />
+                    <img className='profile_img' src={ProfileImage} alt='profile' />
                     <span>Personal Account</span>
                     <p>Mohamed Mufasil Mufeeth</p>
-                    <div className='back_btn'>Back</div>
+                    <div className='back_btn'>
+                        <img className='back_icon' src='https://cdn-icons-png.flaticon.com/512/54/54517.png' alt='icon' />
+                        <span>Back</span>
+                    </div>
                 </header>
                 <InputField label="password" type="password" placeHolder="Enter a password" message="Forgot password" />
                 <section className='btn_group'>

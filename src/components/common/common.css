@@ -4,7 +4,8 @@ button{
     border-radius: 25px;
     font-size: 15px;
     border: none;
-    background-color: #4255BD;
+    background-color: #6877CA;
+    cursor: pointer;
 }
 
 .custom_input label{
@@ -38,4 +39,8 @@ button{
     top: 14px;
     height: 30px;
     width: 30px;
+}
+
+.custom_input input:focus{
+    outline: #6877CA;
 }
